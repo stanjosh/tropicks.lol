@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+
+:root {
+    --rotationangle: 10deg;
+}
+
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url(./images/canscan.png);
+	background-position: top left;
+	z-index: 10;
+	-webkit-animation-name: flicker;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	mix-blend-mode: darken;
+} 
+
+@-webkit-keyframes flicker {
+	from {
+		opacity: 0.5;
+
+	}
+	4% {
+		opacity: 0.5;
+	}
+	6% {
+		opacity: 0.5;
+	}
+	8% {
+		opacity: 0.5;
+	}
+	10% {
+		opacity: 0.2;
+	}
+	11% {
+		opacity: 0.5;
+
+	}
+	12% {
+		opacity: 0.55;
+
+	}
+	14% {
+		opacity: 0.5;
+
+	}
+	16% {
+		opacity: 0.45;
+
+	}
+	17% {
+		opacity: 0.35;
+	}
+	19% {
+		opacity: 0.5;
+	}
+	20% {
+		opacity: 0.5;
+
+	}
+	24% {
+		opacity: 0.2;
+
+	}
+	26% {
+		opacity: 0.555;
+
+	}
+	28% {
+		opacity: 0.5;
+	}
+	38% {
+		opacity: 0.5;
+	}
+	40% {
+		opacity: 0.5;
+	}
+	42% {
+		opacity: 0.35;
+	}
+	44% {
+		opacity: 0.5;
+	}
+	46% {
+		opacity: 0.555;
+
+	}
+	56% {
+		opacity: 0.5;
+
+	}
+	58% {
+		opacity: 0.5;
+	}
+	60% {
+		opacity: 0.2;
+	}
+	68% {
+		opacity: 0.3;
+	}
+	70% {
+		opacity: .6; /*peak*/
+	}
+	72% {
+		opacity: 0.5;
+
+	}
+	93% {
+		opacity: 0.5;
+	}
+	95% {
+		opacity: .6; /*peak*/
+	}
+	97% {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 0.5;
+	}
+}
+
+
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.bg {
+	background-image: url(./images/bgerf.png);
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+	top: 0;
+	overflow: hidden;
+  }
+
+.tape {
+    display: block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 1029px;
+	max-height: 800px;
+    position: relative;
+    background-image: url(./images/tape.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 508px;
+	z-index: 11;
+    transform: rotateZ(var(--rotationangle));
+	}
+
+.words {
+
+	font-family: 'Coming Soon', cursive;
+	transform: rotateZ(-10deg) translateX(40%)  ;
+	object-fit: fill;
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	top: 2.5em;
+	left: 1.75em;
+	text-align: center;
+	font-size: 2em;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+a {
+ 
+	text-decoration: none;
+	color: rgba(0,0,0,1);
+}
+
+.icon {
+    max-width: 150px;
+}

@@ -1,1 +1,0 @@
-# tropicks.lol

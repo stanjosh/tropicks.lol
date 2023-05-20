@@ -4,242 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/png" href="jesse.png">
-
+<link rel="stylesheet" type="text/css" href="./assets/style.css">
 <title>tropicks lol</title>
 
-<script type="text/javascript">
-
-function aud_play_pause() {
-  var myAudio = document.getElementById("myAudio");
-  if (myAudio.paused) {
-    myAudio.play();
-  } else {
-    myAudio.pause();
-  }
-}
-
-
-</script>
-
-<style type="text/css">
-@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
-
-
-.overlay {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-image: url(canscan.png);
-	background-position: top left;
-	z-index: 10;
-	-webkit-animation-name: flicker;
-	-webkit-animation-duration: 3s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-	mix-blend-mode: darken;
-} 
-
-@-webkit-keyframes flicker {
-	from {
-		opacity: 0.5;
-
-	}
-	4% {
-		opacity: 0.5;
-	}
-	6% {
-		opacity: 0.5;
-	}
-	8% {
-		opacity: 0.5;
-	}
-	10% {
-		opacity: 0.2;
-	}
-	11% {
-		opacity: 0.5;
-
-	}
-	12% {
-		opacity: 0.55;
-
-	}
-	14% {
-		opacity: 0.5;
-
-	}
-	16% {
-		opacity: 0.45;
-
-	}
-	17% {
-		opacity: 0.35;
-	}
-	19% {
-		opacity: 0.5;
-	}
-	20% {
-		opacity: 0.5;
-
-	}
-	24% {
-		opacity: 0.2;
-
-	}
-	26% {
-		opacity: 0.555;
-
-	}
-	28% {
-		opacity: 0.5;
-	}
-	38% {
-		opacity: 0.5;
-	}
-	40% {
-		opacity: 0.5;
-	}
-	42% {
-		opacity: 0.35;
-	}
-	44% {
-		opacity: 0.5;
-	}
-	46% {
-		opacity: 0.555;
-
-	}
-	56% {
-		opacity: 0.5;
-
-	}
-	58% {
-		opacity: 0.5;
-	}
-	60% {
-		opacity: 0.2;
-	}
-	68% {
-		opacity: 0.3;
-	}
-	70% {
-		opacity: .6; /*peak*/
-	}
-	72% {
-		opacity: 0.5;
-
-	}
-	93% {
-		opacity: 0.5;
-	}
-	95% {
-		opacity: .6; /*peak*/
-	}
-	97% {
-		opacity: 0.5;
-	}
-	to {
-		opacity: 0.5;
-	}
-}
-
-
-body, html {
-	height: 100%;
-	margin: 0;
-	padding: 0;
-}
-
-.bg {
-	background-image: url(bgerf.png),url(vignetter.png);
-	height: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	z-index: 1;
-	top: 0;
-	overflow: hidden;
-  }
-
-.tape {
-    display: block;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    height: 1029px;
-	max-height: 800px;
-    position: fixed;
-    background-image: url(tape.png);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 508px;
-	z-index: 11;
-	}
-
-.words {
-
-	font-family: 'Coming Soon', cursive;
-	transform: rotateX(-2deg) rotateY(2deg) rotateZ(-6deg)   ;
-	object-fit: fill;
-	padding: 0;
-	margin: 0;
-	position: fixed;
-	top: 2.5em;
-	left: 1.75em;
-	text-align: center;
-	font-size: 2em;
-	-o-text-overflow: ellipsis;
-	text-overflow: ellipsis;
-}
-
-button {
-  background-image: url(pp.png);
-  background-repeat: no-repeat;
-  height: 75px;
-  width: 75px;
-  border: none;
-  background-color: rgba(0,0,0,0);
-  background-size: contain;
-}
-
-button span {
-  display: none;
-}
-
-a {
- 
-	text-decoration: none;
-	color: rgba(0,0,0,1);
-}
-
-</style>
 </head>
 
 <body>
 <div class="bg">
 
-<div class="tape">
+<div class="tape" id="tape">
 
 	<div class="words">
 		tropicks<br>
-		<a href="https://steamcommunity.com/id/tropicks/" target="new">steam profile</a><br>
-		<a href="http://twitch.tv/tropickstv">twitch</a><br>
-		<a href="https://discord.gg/0dt2SJWvVvEtSSDB">discord</a><br>
-		<a href="https://twitter.com/tropicks8">tweeter</a><br>
-
-<audio id="myAudio"
- <source src="nastyrings.wav"
-         type='audio/wav'>
-  no song 4 u
-</audio>
-<button type="reset" title="song"  onclick="aud_play_pause()"> 
-    <span>Cancel</span></button>
-
+		<a href="https://steamcommunity.com/id/tropicks/" target="new"><img src="./assets/images/steam.svg" alt="steam profile" class="icon"></a><br>
+		<a href="http://twitch.tv/tropickstv"><img src="./assets/images/twitch.svg" alt="twitch.tv link" class="icon"></a><br>
+		<a href="https://discord.gg/0dt2SJWvVvEtSSDB"><img src="./assets/images/discord.svg" alt="discord server link" class="icon"></a><br>
+		<a href="https://twitter.com/tropicks8"><img src="./assets/images/twitter.svg" alt="twitter link" class="icon"></a><br>
 
 
 	</div>
@@ -249,6 +29,7 @@ a {
 <div class="overlay"></div>
 </div>
 
+<script>document.getElementById('tape').style.setProperty('transform', "rotateZ(" + Math.floor(Math.random() * (30 - 45))  + "deg" + ")")</script>
 </body>
 
 </html>
